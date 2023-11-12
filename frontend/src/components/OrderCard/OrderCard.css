@@ -1,0 +1,43 @@
+.order-card {
+    border: 1px solid #000;
+    padding: 18px;
+}
+
+.product-order-card-img img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.main-order-card {
+    position: relative;
+}
+
+.table-number-order-card {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.order-card-products {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.product-order-card {
+    display: flex;
+    gap: 8px;
+}
+
+.product-order-card-name-product {
+    text-transform: capitalize;
+}
+
+.product-order-card-text {
+    display: flex;
+    width: 100%;
+    & div {
+        flex-grow: 1;
+    }
+}

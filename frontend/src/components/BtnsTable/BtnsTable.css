@@ -1,0 +1,25 @@
+.btn-alter-table {
+    padding: 16px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 25px -3px rgba(0,0,0,0.1);
+    display: grid;
+    place-items: center;
+}
+
+.btn-change-state-table {
+    background-color: transparent;
+}
+
+.btn-star-complete {
+    font-size: 32px;
+    background-color: transparent;
+    color: #0be881;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-star-medium {
+    font-size: 32px;
+    background-color: transparent;
+    color: #ff3f34;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}

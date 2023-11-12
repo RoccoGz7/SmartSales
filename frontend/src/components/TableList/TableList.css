@@ -1,0 +1,38 @@
+.Table {
+    min-width: 80px;
+    max-height: 65px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 16px;
+    position: relative;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.Table-list {
+    margin-top: 2rem;
+    display: flex;
+    gap: 12px;
+    max-height: 520px;
+    flex-wrap: wrap;
+}
+
+.star-icon {
+    font-size: 24px !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 8px -4px;
+}
+
+.star-is-not-available {
+    color: #e74c3c;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+}
+
+.star-is-available {
+    color: #2ecc71;
+    text-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+}
