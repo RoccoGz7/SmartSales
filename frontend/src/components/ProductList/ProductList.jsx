@@ -36,13 +36,20 @@ function ProductCard({ name, price }) {
 function ProductList() {
 
     const [products, setProducts] = useState([])
-    
+
     useEffect(() => {
         async function getProducts() {
-            setProducts(data)
+            try {
+                const res = await fetch("http://localhost:3000/api/products")
+                const data = await res.json()
+                 setProducts(data)
+                console.log(data)
+            } catch(e) {
+                console.log(e)
+            }
         }
         getProducts()
-    })
+    }, [])
 
   return (
     <div className='container-product-list'>
@@ -54,5 +61,6 @@ function ProductList() {
     </div>
   )
 }
+
 
 export default ProductList

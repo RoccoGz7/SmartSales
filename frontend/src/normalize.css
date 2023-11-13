@@ -32,6 +32,9 @@ html {
 
 body {
   scroll-behavior: smooth;
+  background-image: url("./assets/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {

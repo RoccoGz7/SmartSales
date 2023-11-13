@@ -1,9 +1,10 @@
 .home__container-buttons {
     display: grid;
-    grid-template-columns: repeat(2, 180px);
-    grid-template-rows: repeat(2, 180px);
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(2, 170px);
     gap: 100px;
     margin: auto;
+
 }
 
 .home__container-buttons button {
@@ -20,11 +21,25 @@
 .home__main-container {
     width: max-content;
     height: max-content;
-    background-color: #b2bec3;
+    background-color: #c4dae49c;
     padding: 5rem 5rem;
-    border-radius: 1rem;
+    border-radius: 3.4rem;
 }
 
+.btn-inicio{
+    background-color: rgb(17, 63, 6) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: bold !important;
+    font-size: 23px !important;
+    text-align: center;
+    border-radius: 20px !important;
+}
+
+.fa-solid fa-cart-shopping{
+    font-size: 25px
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

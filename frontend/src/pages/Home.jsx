@@ -29,10 +29,10 @@ function Home() {
       <div className='home__container-buttons-container'>
         <main className='home__main-container'>
           <div className='home__container-buttons'>
-            <Button variant='contained' LinkComponent={Link} to='/pedidos'>Pedidos</Button>
-            <Button variant='contained' LinkComponent={Link} to='/pedidos'>Realizar Pedidos</Button>
-            <Button variant='contained' LinkComponent={Link} to='/pedidos'>Ajustes</Button>
-            <Button variant='contained' LinkComponent={Link} to='/pedidos'>Estadisticas</Button>
+            <Button className='btn-inicio' variant='contained' LinkComponent={Link} to='/pedidos'>Pedidos<i class="fa-solid fa-cart-shopping"></i></Button>
+            <Button className='btn-inicio' variant='contained' LinkComponent={Link} to='/pedidos'>Realizar Pedidos</Button>
+            <Button className='btn-inicio' variant='contained' LinkComponent={Link} to='/pedidos'>Ajustes</Button>
+            <Button className='btn-inicio' variant='contained' LinkComponent={Link} to='/pedidos'>Estadisticas</Button>
           </div>
         </main>
       </div>
