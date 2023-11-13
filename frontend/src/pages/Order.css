@@ -1,0 +1,36 @@
+.order {
+    display: flex;
+}
+
+.order__current-order {
+    
+}
+.capitalaze {
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+}
+.order__text-title-1 {
+    background-color: #26de81;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    padding: 12px;
+}
+
+.order__text-title-2 {
+    background-color: #20bf6b;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    padding: 12px;
+}
+
+.order__current-order-title {
+    display: flex;
+}
+
+
+.current-product {
+    display: flex;
+}

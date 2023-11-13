@@ -10,12 +10,15 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import './normalize.css'
+import { ContextOrderProvider } from './contexts/ContextOrder.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CssBaseline>
       <BrowserRouter>
-        <App />
+        <ContextOrderProvider>
+          <App />
+        </ContextOrderProvider>
       </BrowserRouter>
     </CssBaseline>
   </React.StrictMode>,

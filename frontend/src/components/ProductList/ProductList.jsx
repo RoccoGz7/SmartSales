@@ -2,10 +2,26 @@ import { useState, useEffect } from 'react'
 import './ProductList.css'
 import { products as data } from "../../data/products"
 import ft from '../../assets/pasteles.jpg'
+import { useOrder } from '../../contexts/ContextOrder'
 
 function ProductCard({ name, price }) {
+
+    const { order, setOrder } = useOrder()
+
+    function handleClick() {
+        const productFound = order.find(({ name }) => name === name)
+        if (!productFound) {
+            setOrder([ ...order, { name, price, cantidad: 1 }])
+            return
+        }
+        // console.log(o)
+        // const productsFilter = order.filter(({ name }) => )
+        console.log(productsFilter)
+        setOrder([ ...order, { name, price, cantidad: productFound.cantidad + 1}])
+    }
+
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={handleClick}>
             <div className='img-product'> 
                 <img src={ft} alt="pasteles" />
             </div>

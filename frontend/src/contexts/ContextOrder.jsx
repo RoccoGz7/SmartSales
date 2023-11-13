@@ -1,14 +1,21 @@
-import { createContext } from "react";
+import { useState, useContext, createContext } from "react";
 
-import React from 'react'
+export const ContextOrder = createContext()
 
-cr
-function ContextOrderProvider({ children }) {
+export function useOrder() {
+  return useContext(ContextOrder)
+}
+
+export function ContextOrderProvider({ children }) {
+
+  const [order, setOrder] = useState([])
+
   return (
-    <ContextOrder.Provider>
+    <ContextOrder.Provider value={{
+      order,
+      setOrder
+    }}>
         { children }
     </ContextOrder.Provider>
   )
 }
-
-export default ContextOrderProvider
